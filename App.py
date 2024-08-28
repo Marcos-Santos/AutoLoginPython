@@ -2,7 +2,7 @@
 # Autor: Marcos Alexandre
 
 import csv
-from selenium import webdriver
+#from selenium import webdriver
 #from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
@@ -23,4 +23,4 @@ print(user,password)
 #serv = Service(ChromeDriverManager().install())
 #nav = webdriver.Chrome(service=serv)
 
-navegador = webdriver.Chrome().get("www.google.com")
+#navegador = webdriver.Chrome().get("www.google.com")
