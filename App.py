@@ -3,11 +3,11 @@
 
 import csv
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+#from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
 # get the user's data from CSV file
-with open ('Dados/Dados de Acesso.csv', 'r') as arq: 
+with open ('C:\DEV\AutoLoginPython\AutoLoginPython\Dados\Dados de Acesso.csv', 'r') as arq: 
         reader = csv.reader(arq)
         for line in reader:
                 if ("Login:" in line):
@@ -17,6 +17,8 @@ with open ('Dados/Dados de Acesso.csv', 'r') as arq:
            
 # Open the Default Browser
 print("iniciando parte dois")
+
+print(user,password)
 #Toda vez ele vai verificar que versao esta sendo usado do seu Chrome e instalando o driver necessario 
 #serv = Service(ChromeDriverManager().install())
 #nav = webdriver.Chrome(service=serv)
